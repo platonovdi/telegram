@@ -7,7 +7,7 @@ import telebot
 
 
 bot = telebot.TeleBot(
-    os.environ('token'), parse_mode=None)
+    os.environ['token'], parse_mode=None)
 URL = ['https://www.rbc.ru/crypto/currency/btcusd',
        'https://quote.rbc.ru/ticker/59111']
 HEADERS = {
