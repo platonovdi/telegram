@@ -2,11 +2,12 @@ from bs4 import BeautifulSoup
 import requests
 import bs4
 import re
+import os
 import telebot
 
 
 bot = telebot.TeleBot(
-    '1409772665:AAEN51HJfieV1HEZfPtb5idLx8e6FDW78dc', parse_mode=None)
+    os.environ('token'), parse_mode=None)
 URL = ['https://www.rbc.ru/crypto/currency/btcusd',
        'https://quote.rbc.ru/ticker/59111']
 HEADERS = {
